@@ -22,6 +22,10 @@ public class App {
 		
 		System.out.print("Enter a value in miles to be converted to kilometers: ");
 		double miles = scanner.nextFloat();
+		
+		//this closes the resource leak from having Scanner open
+		scanner.close();
+		
 		double kilometers = miles * 1.69;
 		
 		System.out.printf("%.2f miles is %.2f kilometers.\n", miles, kilometers);
