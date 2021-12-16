@@ -19,6 +19,12 @@ public class App {
 		double celsius = (fahrenheit - 32) * 5.0 / 9.0;
 		
 		System.out.printf("%.2f degrees Fahrenheit is %.2f degrees celsius.\n", fahrenheit, celsius);
+		
+		System.out.print("Enter a value in miles to be converted to kilometers: ");
+		double miles = scanner.nextFloat();
+		double kilometers = miles * 1.69;
+		
+		System.out.printf("%.2f miles is %.2f kilometers.\n", miles, kilometers);
 
 	}
 
